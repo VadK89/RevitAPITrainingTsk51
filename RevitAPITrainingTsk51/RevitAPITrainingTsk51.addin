@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"D:\RevitAPITrainig\RevitAPITrainingTsk51.dll"</Assembly>
+		<AddInId>
+			CAD51C0E-763F-444A-9A3A-2826C6ECD85C
+		</AddInId>
+		<FullClassName>RevitAPITrainingTsk51.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Создание кнопок</Text>
+	</AddIn>
+</RevitAddIns>
