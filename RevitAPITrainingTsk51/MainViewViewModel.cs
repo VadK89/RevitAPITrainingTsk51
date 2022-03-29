@@ -1,7 +1,7 @@
 ﻿using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Prism.Commands;
-using RevitAPITrainingLibraryTsk;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +33,7 @@ namespace RevitAPITrainingTsk51
 
             List<Element> oElement = ElementCount.PickObjects(_commandData, BuiltInCategory.OST_Doors);
 
-            TaskDialog.Show("Количество дверей", $"Двери: {oElement.Count}");
+            TaskDialog.Show("Количество дверей", $"Двери: {oElement.Count} шт.");
 
             RaiseShowRequest();
         }
@@ -42,7 +42,7 @@ namespace RevitAPITrainingTsk51
         {
             RaiseHideRequest();
             double volume = VolWallCount.Volume(_commandData);
-            TaskDialog.Show("Объем стен", $"Объем стен: {volume} ");
+            TaskDialog.Show("Объем стен", $"Объем стен: {volume} м3");
             RaiseShowRequest();
         }
 
@@ -52,7 +52,7 @@ namespace RevitAPITrainingTsk51
 
             List<Element> oElement = ElementCount.PickObjects(_commandData, BuiltInCategory.OST_PipeCurves);
 
-            TaskDialog.Show("Количество труб", $"Трубы: {oElement.Count}");
+            TaskDialog.Show("Количество труб", $"Трубы: {oElement.Count} шт.");
 
             RaiseShowRequest();
         }
